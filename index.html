@@ -5,41 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
   <main>
-    <nav class="d-flex">
+    <nav>
       <ul>
         <li class="nav-item nav-item-active tooltip link">
           <img src="icons/chats.svg" alt="icono chats">
-          <span class="tooltiptext scale-up-left">Chats</span>
+          <div>
+            <span class="tooltiptext scale-up-left">Chats</span>
+          </div>
         </li>
         <li class="nav-item tooltip link">
           <img src="icons/comunidades.svg" alt="icono comunidades">
-          <span class="tooltiptext">Comunidades</span>
+          <div>
+            <span class="tooltiptext">Comunidades</span>
+          </div>
         </li>
         <li class="nav-item tooltip link">
           <img src="icons/estados.svg" alt="icono estados">
-          <span class="tooltiptext">Estados</span>
+          <div>
+            <span class="tooltiptext">Estados</span>
+          </div>
         </li>
         <li class="nav-item tooltip link">
           <img src="icons/canales.svg" alt="icono canales">
-          <span class="tooltiptext">Canales</span>
+          <div>
+            <span class="tooltiptext">Canales</span>
+          </div>
         </li>
         <li class="nav-item separador">
           <hr>
         </li>
         <li class="nav-item tooltip link">
           <img src="icons/archivados.svg" alt="icono archivados">
-          <span class="tooltiptext">Archivados</span>
+          <div>
+            <span class="tooltiptext">Archivados</span>
+          </div>
         </li>
         <li class="nav-item tooltip link">
           <img src="icons/destacados.svg" alt="icono destacados">
-          <span class="tooltiptext">Destacados</span>
+          <div>
+            <span class="tooltiptext">Destacados</span>
+          </div>
         </li>
       </ul>
       <ul>
@@ -50,11 +62,13 @@
         </li>
         <li class="nav-item tooltip link">
           <img class="user-profile-img" src="https://picsum.photos/200?random=3" alt="user-profile-img">
-          <span class="tooltiptext">Perfil</span>
+          <div>
+            <span class="tooltiptext">Perfil</span>
+          </div>
         </li>
       </ul>
     </nav>
-    <aside class="chats">
+    <section class="chats">
       <header class="d-flex">
         <span class="chats-title">Chats</span>
         <div class="chats-options">
@@ -62,20 +76,29 @@
           <i class="bi bi-three-dots-vertical link"></i>
         </div>
       </header>
-      <div class="chats-search d-flex align-items-center">
-        <div class="chats-search-icon d-flex">
+      <search class="chats-search">
+        <div class="chats-search-icon">
           <i class="bi bi-search"></i>
         </div>
         <input type="text" placeholder="Buscar">
         <i class="bi bi-filter"></i>
-      </div>
+      </search>
       <ul>
-        <li class="chats-item align-items-center">
-          <img class="chats-item-img" src="https://picsum.photos/200?random=1" alt="chat-item-profile-img">
-          <div class="chats-item-preview-container d-flex align-items-center">
-            <div class="chats-item-preview d-flex">
-              <span class="chats-item-preview-title">Lorem ipsum</span>
-              <span class="chats-item-preview-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.Vero at neque quisquam? Molestiae nemo temporibus aliquid minus atque suscipit consequatur ratione unde, saepe officia labore ullam quae inventore iste. Aliquam.</span>
+        <li class="chats-item">
+          <img class="chats-item-img" src="img/user-profile-img.jpg" alt="chat-item-profile-img">
+          <div class="chats-item-preview-container">
+            <div class="chats-item-preview">
+              <span class="chats-item-preview-title">Rolling Code School</span>
+              <span class="chats-item-preview-subtitle">
+                Hola de nuevo 🙂 ¡Tenemos un BENEFICIO EXCLUSIVO para vos como ALUMNO CERTIFICADO de RollingCode School!
+                OBTENE UN 40% OFF en el curso React Advance! 🤯 Cuotas sin interés desde $21.242! O si preferís en
+                efectivo o transferencia, el precio final con descuento es de $119.866. Con este módulo vas a poder
+                profundizar tus conocimientos de Front-End con React y desenvolverte de una manera excepcional en el
+                ambiente laboral. Te pasamos el programa con un video corto aquí:
+                https://web.rollingcodeschool.com/especializacion-frontend-con-react/ Comienza el 16 de Mayo a los
+                Martes y Jueves de 19 a 21.30hs IMPORTANTE: PROMOCIÓN VÁLIDA HASTA EL JUEVES 25 DE ABRIL A LAS 20:59HS.
+                Pedinos el link por aqui para inscribirte 💪
+              </span>
             </div>
             <div class="chats-item-option">
               <span class="chats-item-option-date">18:45</span>
@@ -85,27 +108,14 @@
             </div>
           </div>
         </li>
-        <li class="chats-item align-items-center">
+        <li class="chats-item">
           <img class="chats-item-img" src="https://picsum.photos/200?random=2" alt="chat-item-profile-img">
-          <div class="chats-item-preview-container d-flex align-items-center">
-            <div class="chats-item-preview d-flex">
+          <div class="chats-item-preview-container">
+            <div class="chats-item-preview">
               <span class="chats-item-preview-title">Lorem ipsum</span>
-              <span class="chats-item-preview-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.Vero at neque quisquam? Molestiae nemo temporibus aliquid minus atque suscipit consequatur ratione unde, saepe officia labore ullam quae inventore iste. Aliquam.</span>
-            </div>
-            <div class="chats-item-option">
-              <span class="chats-item-option-date">18:45</span>
-              <span class="chats-item-option-icon">
-                <i class="bi bi-chevron-down"></i>
-              </span>
-            </div>
-          </div>
-        </li>
-        <li class="chats-item align-items-center">
-          <img class="chats-item-img" src="https://picsum.photos/200?random=3" alt="chat-item-profile-img">
-          <div class="chats-item-preview-container d-flex align-items-center">
-            <div class="chats-item-preview d-flex">
-              <span class="chats-item-preview-title">Lorem ipsum</span>
-              <span class="chats-item-preview-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.Vero at neque quisquam? Molestiae nemo temporibus aliquid minus atque suscipit consequatur ratione unde, saepe officia labore ullam quae inventore iste. Aliquam.</span>
+              <span class="chats-item-preview-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.Vero at
+                neque quisquam? Molestiae nemo temporibus aliquid minus atque suscipit consequatur ratione unde, saepe
+                officia labore ullam quae inventore iste. Aliquam.</span>
             </div>
             <div class="chats-item-option">
               <span class="chats-item-option-date">18:45</span>
@@ -116,67 +126,65 @@
           </div>
         </li>
       </ul>
-    </aside>
-    <section class="chat d-flex">
-      <section class="chat-messages-bg">
-        <div class="chat-message-bg-img"></div>
-      </section>
-      <div class="chat-messages-container">
-        <header class="chat-header d-flex">
-          <div class="chat-header-info d-flex">
-            <img class="" src="https://picsum.photos/200?random=1" alt="chat-profile-img">
-            <div class="chat-header-info-name">
-              <span class="chat-header-info-title">Título</span>
-              <span class="chat-header-info-subtitle">Subtítulo</span>
-            </div>
+    </section>
+    <section class="chat">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <img class="chat-header-profile-img" src="img/user-profile-img.jpg" alt="chat-profile-img">
+          <div class="chat-header-info-name">
+            <span class="chat-header-info-title">Rolling Code School</span>
+            <span class="chat-header-info-subtitle">últ. vez hoy a la(s) 1:38 p. m.</span>
           </div>
-          <div class="chat-options">
+        </div>
+        <div class="chat-header-options">
+          <div class="chat-header-options-videocall">
             <i class="bi bi-camera-video-fill opacity-50"></i>
-            <i class="bi bi-search"></i>
-            <i class="bi bi-three-dots-vertical link"></i>
+            <i class="bi bi-chevron-down opacity-50"></i>
           </div>
-        </header>
-        <div class="chat-messages d-flex">
-          <article class="chat-message-received">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore, deserunt perferendis corporis officia nesciunt, odit in eligendi mollitia, quidem pariatur quam. Ea consequuntur quidem atque sint amet velit praesentium.
-          </article>
-          <article class="chat-message-sent">
-            Molestiae quasi quis labore totam quod. Deserunt quasi excepturi asperiores quod sint aspernatur necessitatibus eaque provident fugiat reiciendis ad voluptas, obcaecati magni tenetur quibusdam tempora accusantium. A illo doloribus est!
-          </article>
-          <article class="chat-message-received">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore, deserunt perferendis corporis officia nesciunt, odit in eligendi mollitia, quidem pariatur quam. Ea consequuntur quidem atque sint amet velit praesentium.
-          </article>
-          <article class="chat-message-sent">
-            Molestiae quasi quis labore totam quod. Deserunt quasi excepturi asperiores quod sint aspernatur necessitatibus eaque provident fugiat reiciendis ad voluptas, obcaecati magni tenetur quibusdam tempora accusantium. A illo doloribus est!
-          </article>
-          <article class="chat-message-received">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore, deserunt perferendis corporis officia nesciunt, odit in eligendi mollitia, quidem pariatur quam. Ea consequuntur quidem atque sint amet velit praesentium.
-          </article>
-          <article class="chat-message-sent">
-            Molestiae quasi quis labore totam quod. Deserunt quasi excepturi asperiores quod sint aspernatur necessitatibus eaque provident fugiat reiciendis ad voluptas, obcaecati magni tenetur quibusdam tempora accusantium. A illo doloribus est!
-          </article>
-          <article class="chat-message-received">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore, deserunt perferendis corporis officia nesciunt, odit in eligendi mollitia, quidem pariatur quam. Ea consequuntur quidem atque sint amet velit praesentium.
-          </article>
-          <article class="chat-message-sent">
-            Molestiae quasi quis labore totam quod. Deserunt quasi excepturi asperiores quod sint aspernatur necessitatibus eaque provident fugiat reiciendis ad voluptas, obcaecati magni tenetur quibusdam tempora accusantium. A illo doloribus est!
-          </article>
-          <article class="chat-message-received">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore, deserunt perferendis corporis officia nesciunt, odit in eligendi mollitia, quidem pariatur quam. Ea consequuntur quidem atque sint amet velit praesentium.
-          </article>
-          <article class="chat-message-sent">
-            Molestiae quasi quis labore totam quod. Deserunt quasi excepturi asperiores quod sint aspernatur necessitatibus eaque provident fugiat reiciendis ad voluptas, obcaecati magni tenetur quibusdam tempora accusantium. A illo doloribus est!
-          </article>
+          <i class="bi bi-search"></i>
+          <i class="bi bi-three-dots-vertical link"></i>
         </div>
-        <div class="chat-input">
-          <i class="bi bi-emoji-smile-fill"></i>
-          <i class="bi bi-plus-lg"></i>
-          <input type="text" placeholder="Escriba un mensaje" id="mensaje">
-          <i class="bi bi-mic-fill"></i>
-        </div>
+      </div>
+      <div class="chat-messages">
+        <article class="chat-message-received">
+          Hola de nuevo  🙂
+
+          ¡Tenemos un BENEFICIO EXCLUSIVO para vos como ALUMNO CERTIFICADO de RollingCode School!
+
+          OBTENE UN  40% OFF en el curso React Advance! 🤯
+
+          Cuotas sin interés desde $21.242!
+
+          O si preferís en efectivo o transferencia, el precio final con descuento es de $119.866.
+
+
+          Con este módulo vas a poder profundizar tus conocimientos de Front-End con React y desenvolverte de una manera excepcional en el ambiente laboral.
+
+          Te pasamos el programa con un video corto aquí:
+          https://web.rollingcodeschool.com/especializacion-frontend-con-react/
+
+          Comienza el 16 de Mayo a los Martes y Jueves de 19 a 21.30hs
+
+          IMPORTANTE: PROMOCIÓN VÁLIDA HASTA EL JUEVES 25 DE ABRIL A LAS 20:59HS.
+
+          Pedinos el link por aqui para inscribirte  💪
+        </article>
+        <article class="chat-message-sent">
+          Buenísimo! gracias 😬
+          <div class="chat-message-sent-date">
+            12:31 <i class="bi bi-check2-all"></i>
+          </div>
+        </article>
+      </div>
+      <div class="chat-input">
+        <i class="bi bi-emoji-smile-fill"></i>
+        <i class="bi bi-plus-lg"></i>
+        <input type="text" placeholder="Escriba un mensaje" id="mensaje">
+        <i class="bi bi-mic-fill"></i>
       </div>
     </section>
   </main>
+  <div class="background"></div>
 </body>
 
 </html>
