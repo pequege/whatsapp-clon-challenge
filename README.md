@@ -6,7 +6,7 @@ Este proyecto es un clon de la interfaz de usuario de WhatsApp, implementado ún
 Demo
 ----
 
-Puedes ver una demostración del proyecto [aquí](https://example.com).
+Puedes ver una demostración del proyecto [aquí](https://pequege.github.io/whatsapp-clon-challenge/).
 
 Tecnologías utilizadas
 ----------------------
