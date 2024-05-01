@@ -25,6 +25,10 @@ nav {
   cursor: pointer;
 }
 
+.seen{
+  color: #4db6e1;
+}
+
 nav ul:first-child {
   margin-top: 10px;
 }
@@ -72,7 +76,7 @@ ul {
 .user-profile-img {
   border-radius: 100%;
   height: 24px;
-  width: 24px;
+  width: 24px !important;
 }
 
 /* Estilo del contenedor de la lista de chats */
@@ -150,6 +154,10 @@ ul {
   margin: auto 18px 0;
 }
 
+.chats-options i:last-child {
+  margin-right: 0;
+}
+
 .chats-item {
   align-items: center;
   display: flex;
@@ -168,6 +176,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 15px 8px;
+  flex-grow: 1;
 }
 
 .chats-item-preview{
@@ -206,15 +215,26 @@ ul {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width: fit-content;
 }
 
-.chats-item-option .chats-item-option-icon{
+.chats-item-option-icon{
   -webkit-text-stroke: 2px;
   position: relative;
-  right: -30px;
+  right: -40px;
   transition: .1s ease;
 }
 
+.chats-item-option-icon i{
+  padding: 5px;
+}
+
+.muted{
+  right: -30px;
+}
+.muted i:first-child{
+  -webkit-text-stroke: 0;
+}
 .chats-item-option:hover .chats-item-option-icon{
   right: 0;
 }
