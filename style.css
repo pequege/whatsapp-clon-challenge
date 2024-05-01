@@ -269,6 +269,10 @@ ul {
   opacity: .5;
 }
 
+.chat-header-options-videocall i{
+  padding: 4px;
+}
+
 .chat-messages{
   flex-grow: 1;
   overflow-y: auto;
@@ -313,13 +317,13 @@ ul {
 .chat-messages{
   display: flex;
   flex-direction: column;
-  padding: 2px;
+  padding: 2px 10px;
   max-height: 500px;
   overflow-y: auto;
   scroll-margin-bottom: 200px;
 }
 
-.chat-message-received, .chat-message-sent{
+.chat-message-received-container, .chat-message-sent{
   background-color: #202c33;
   border-radius: 15px;
   color: white;
@@ -330,6 +334,10 @@ ul {
   width: fit-content;
 }
 
+.chat-message-received-container{
+  position: relative;
+  border-top-left-radius: 0;
+}
 .chat-message-sent{
   align-self: flex-end;
   background-color: #005c4b;
@@ -350,27 +358,39 @@ ul {
   opacity: 1;
 }
 
+.chat-message-received-triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 12px 12px 0;
+  border-color: transparent #202c33 transparent transparent;
+  left: -12px;
+  position: absolute;
+  top: 0;
+  transform: rotate(0deg);
+}
+
 /* BACKGROUND */
 /* .chat-messages-container{
   flex-direction: column;
   height: inherit;
   z-index: 2;
-}
+}*/
 
-.chat-messages-bg{background: url('https://static.whatsapp.net/rsrc.php/v3/yl/r/gi_DckOUM5a.png');
+.background{
+  background: url('https://static.whatsapp.net/rsrc.php/v3/yl/r/gi_DckOUM5a.png');
   height: inherit;
   max-height: 100%;
   opacity: 0.05;
   position: absolute;
-  width: -moz-available;
 }
 
-.chat-messages-bg-img{
+.background-img{
   height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
-} */
+}
 
 
 /* tooltip */
